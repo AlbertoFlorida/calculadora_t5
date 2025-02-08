@@ -38,6 +38,10 @@ jobs:
       - name: Install dependencies
         run: composer install
 
+      - name: Disable Xdebug
+        run: |
+          phpdismod xdebu
+
       - name: Deploy to server
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
