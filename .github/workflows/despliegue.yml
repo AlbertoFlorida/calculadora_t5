@@ -20,9 +20,6 @@ jobs:
       - name: Install dependencies
         run: composer install
 
-      - name: Make phpunit executable
-        run: chmod +x ./vendor/bin/phpunit
-
       - name: Run tests
         run: ./vendor/bin/phpunit tests
 

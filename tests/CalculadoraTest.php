@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 use App\calculadora;
 
-class calculadoraTest extends TestCase
+class CalculadoraTest extends TestCase
 {
     private $calculo;
 
