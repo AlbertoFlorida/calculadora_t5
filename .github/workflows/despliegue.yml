@@ -71,4 +71,4 @@ jobs:
          password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image to Docker Hub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/calculadora_t5:V1
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/calculadora_t5:V2
