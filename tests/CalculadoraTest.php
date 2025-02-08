@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use App\calculadora;
+use App\Calculadora;
 
 class CalculadoraTest extends TestCase
 {
