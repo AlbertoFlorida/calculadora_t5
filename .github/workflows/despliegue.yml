@@ -20,9 +20,8 @@ jobs:
       - name: Install dependencies
         run: composer install
 
-      - name: Disable Xdebug
-        run: |
-          phpdismod xdebug
+      - name: Check PHPUnit installation
+        run: ls -l ./vendor/bin/phpunit
 
       - name: Run tests
         run: ./vendor/bin/phpunit tests
