@@ -38,10 +38,9 @@ jobs:
       - name: Install dependencies
         run: composer install
 
-      - name: Disable Xdebug
-        run: |
-          phpdismod xdebu
-
+      - name: Check PHPUnit installation
+        run: ls -l ./vendor/bin/phpunit
+        
       - name: Deploy to server
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
