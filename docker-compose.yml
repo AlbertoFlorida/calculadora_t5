@@ -1,7 +1,7 @@
-version: '3'
+version: '4'
 services:
   calculadora:
-    image: alberto1500/calculadora_t5:V3
+    image: alberto1500/calculadora_t5:V4
     ports:
       - "8080:80"
     networks:
